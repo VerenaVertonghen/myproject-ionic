@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px"
+	 height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g id="Layer_2">
+	<circle fill="#112539" cx="250" cy="250" r="250"/>
+</g>
+<g id="Layer_3" display="none">
+	<circle display="inline" fill="#FFFFFF" cx="250" cy="250" r="250"/>
+</g>
+<g id="Layer_1">
+	<polygon fill="#CCCCCC" points="262.043,287.504 277.684,293.922 249.543,344.332 	"/>
+	<polygon fill="#FFFFFF" points="192.879,278.504 149.129,276.832 333.293,154.754 	"/>
+	<polygon fill="#E5E5E5" points="249.543,344.332 192.879,278.504 333.293,154.754 263.082,292.504 	"/>
+	<polyline fill="#FFFFFF" points="263.082,292.504 333.293,154.754 351.52,339.332 	"/>
+</g>
+<g id="Layer_4" display="none">
+	<text transform="matrix(1 0 0 1 225.0005 225)" display="inline" fill="#FFFFFF" font-family="'LittleDays'" font-size="200">?</text>
+</g>
+<g id="Layer_5" display="none">
+	<polygon display="inline" fill="#CCCCCC" points="354.263,283.746 360.128,286.152 349.575,305.057 	"/>
+	<polygon display="inline" fill="#FFFFFF" points="328.325,280.371 311.919,279.744 380.981,233.965 	"/>
+	<polygon display="inline" fill="#E5E5E5" points="349.575,305.057 328.325,280.371 380.981,233.965 354.651,285.621 	"/>
+	<polyline display="inline" fill="#FFFFFF" points="354.651,285.621 380.981,233.965 387.815,303.182 	"/>
+	
+		<path display="inline" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M303.872,156.621c0,0-13.869-28.751-67.621-28.751c0,0-123.811-10.782-123.809,129.374c0,0-0.029,113.906,119.971,115.625
+		c0,0,66.245,3.127,103.734-47.498"/>
+</g>
+</svg>

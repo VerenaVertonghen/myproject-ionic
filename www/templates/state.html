@@ -1,0 +1,17 @@
+<ion-view view-title="Expresssion">
+  <ion-content>
+  	<div id="container">
+	  	<div id="user-img">
+			<img ng-src="img/expressions/{{state.category.name}}.png">
+		</div>
+		<h3>{{state.category.name}}</h3>
+	    <h4>{{notification.title}}</h4>
+	    <p class="textbox">{{state.text}}</p>
+	    <div class="button-padding">
+		    <button class="button button-block button-assertive ion-trash-a" ng-click="removeNotification()">
+				Remove 
+			</button>
+		</div>
+    </div>
+  </ion-content>
+</ion-view>

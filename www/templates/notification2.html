@@ -1,0 +1,36 @@
+<ion-view view-title="Step 2">
+  <ion-content padding="true">
+  	<div id="container">
+	    <h3>Fill in some content</h3>
+	    <form name="notificationForm" ng-submit="postNotification(notificationForm.$valid)" novalidate>
+	    	<div id="border-div">
+			<span class="input-label">Title</span>
+			<input type="text" ng-model="notification.title" placeholder="awesome title" name="title" ng-minlength="2" ng-maxlength="20" required>
+			<p ng-show="notificationForm.title.$invalid && !notificationForm.firstname.$pristine" class="help-block">You have to fill in a title.</p>
+			<p ng-show="notificationForm.title.$valid" class="success-block">Check!</p>
+
+			<span class="input-label">Text</span>
+			<textarea name="text" type="text" id="notification-text" ng-model="notification.text" ng-minlength="5" ng-maxlength="500" required></textarea>
+			<p ng-show="notificationForm.text.$invalid && !notificationForm.text.$pristine" class="help-block">You have to fill in some text.</p>
+
+			<span class="input-label">Category</span>
+			<div class="list">
+			  <label class="item item-input item-select">
+			    <div class="input-label">
+			      Select
+			    </div>
+			    <select ng-model="notification.categoryid">
+
+			      <option ng-repeat="category in allCategories"  value="{{category._id}}">{{category.name}}</option>
+			    </select>
+			  </label>
+			</div>
+			</div>
+
+			<button type="submit" class="button button-block button-positive ion-android-create" ng-disabled="notificationForm.$invalid">
+				Create
+			</button> 
+		</form>
+    </div>
+  </ion-content>
+</ion-view>

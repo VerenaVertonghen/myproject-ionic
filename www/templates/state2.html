@@ -1,0 +1,24 @@
+<ion-view view-title="Step 2">
+  <ion-content padding="true" has-header="true">
+  	<div id="container">
+	    <h3>How are you feeling?</h3>
+	    <div id="border-div">
+	    <div id="all-categories" class="align-left">
+			<div ng-show="showup">
+				<ion-radio ng-repeat="category in allCategories | upFilter" ng-model="categoryid.id" value="{{category._id}}">{{category.name}}</ion-radio>
+			</div>
+			<div ng-show="showdown">
+				<ion-radio ng-repeat="category in allCategories | downFilter" ng-model="categoryid.id" value="{{category._id}}">{{category.name}}</ion-radio>
+			</div>
+		</div>
+		<!-- ng-disabled="!category.id"  -->
+		<button class="button button-block button-positive ion-ios-paperplane" ng-click="postState()">
+			Post it now
+		</button> 
+		<button class="button button-block button-positive ion-ios-chatbubble" ng-click="nextStep()">
+			Talk about it
+		</button> 
+		</div>
+    </div>
+  </ion-content>
+</ion-view>

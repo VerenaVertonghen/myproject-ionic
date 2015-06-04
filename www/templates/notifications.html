@@ -1,0 +1,45 @@
+<ion-view view-title="Notifications">
+  <ion-content padding="true">
+  <div id="container">
+    <div class="notifications">
+    	<div id="big-avatar">
+
+	    	<div ng-show="showadmin">
+	    		<h3>Admin functionality</h3>
+				<button class="button button-block button-positive ion-android-create" ng-click="createNotification()">
+				Create notification
+				</button>
+			    <!-- <div class="flash-alert" ng-show="allNotifications.length==0">
+			      <p>You don't have any entries yet.</p>
+			    </div>
+			    <div class="states" ng-repeat="notification in allNotifications | orderBy:'-created_at' | limitTo:10">
+				    <a class="item item-avatar">
+					    <img ng-src="img/expressions/{{notification.category.name}}.png">
+					    <h2>{{notification.title}}</h2>
+					    <p class="quote">{{notification.text | limitTo:30}}...</p>
+				    </a>
+				</div> -->
+	    	</div>
+
+	    	<div ng-show="!showadmin">
+		    	<h3>View your notifications</h3>
+		    	<div class="flash-alert" ng-show="allNotifications.length==0">
+			      <p>You don't have any notifications yet.</p>
+			    </div>
+			    <button class="button button-block button-assertive ion-trash-a" ng-click="removeNotifications()">
+				Remove all notifications
+				</button>
+			    <div class="states" ng-repeat="notification in allNotifications | orderBy:'-created_at' | limitTo:10">
+				    <a href="#/app/notifications/{{notification._id}}" class="item item-avatar">
+					    <img ng-src="img/expressions/{{notification.category.name}}.png">
+					    <h2>{{notification.title}}</h2>
+					    <p class="quote">{{notification.text | limitTo:30}}...</p>
+				    </a>
+				</div>
+		    </div>
+
+	    </div>
+	</div>
+	</div>
+  </ion-content>
+</ion-view>

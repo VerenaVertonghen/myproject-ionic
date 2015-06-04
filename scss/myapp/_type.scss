@@ -1,0 +1,69 @@
+.cap{
+	text-transform: capitalize;
+}
+
+.quote{
+	color:$asbestos;
+	font-family:$light-font;
+	font-size:$font-size-small !important;
+}
+
+.textbox{
+	color:$asbestos;
+	font-family:$light-font;
+	font-size:$font-size-small !important;
+	text-align:left;
+	padding:2em;
+}
+
+.emphasis{
+	color:$positive;
+	font-family:$regular-font;
+}
+
+.help-block{
+	color:$assertive;
+	font-size:$font-size-small;
+	padding: 6px 0px 0px 16px;
+}
+
+.success-block{
+	color:$positive;
+	font-family:$light-font;
+	font-size:$font-size-small;
+	padding: 6px 0px 0px 16px;
+}
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"]{
+	font-family:$light-font;
+}
+
+/* FIX */
+.item{
+	background:none !important;
+	border-radius: $button-border-radius;
+}
+
+.item-select select{
+	color:$positive;
+}
+
+#border-div{
+	.item{
+		border-color:$start-border !important;
+	}
+	.checkbox input:before, .checkbox .checkbox-icon:before{
+		border-color:$start-border !important;
+	}
+}
+
+.not-rounded{
+	.item{
+		border-radius: 0px !important;
+	}
+	
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+}

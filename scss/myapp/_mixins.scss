@@ -1,0 +1,15 @@
+@mixin rounded($pixels){
+	$radius: $pixels;
+	 -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -khtml-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin my-pad(){
+	padding: 0.4em;
+}
+
+@mixin my-shadow($color){
+  box-shadow: 0 3px darken($color,10);
+}

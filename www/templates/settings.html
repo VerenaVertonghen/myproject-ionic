@@ -1,0 +1,63 @@
+<ion-view view-title="Theme">
+  <ion-content padding="true">
+  	<div id="container">
+	<h3>Settings</h3>
+	<div id="border-div">
+	<label class="item item-input item-select">
+		<div class="input-label">
+		Notifications
+		</div>
+		<select>
+		<option>A lot!</option>
+		<option selected>Daily</option>
+		<option>Don't bother me</option>
+		</select>
+	</label>
+	<br>
+	<label class="item item-input item-select">
+		<div class="input-label">
+		Language
+		</div>
+		<select>
+		<option>Nederlands</option>
+		<option selected>English</option>
+		<option>Francais</option>
+		<option>Deutsch</option>
+		</select>
+	</label>
+	<br>
+	<label class="item item-input item-select">
+		<div class="input-label">
+		Theme 
+		</div>
+		<select>
+		<option selected>Dark</option>
+		<option>Light</option>
+		<option>Colour</option>
+		</select>
+	</label>
+<!-- 	<label class="item item-input item-select">
+		<div class="input-label">
+		Theme 
+		</div>
+		<select ng-model="css" ng-options="">
+		<option selected>Dark</option>
+		<option>Light</option>
+		<option>Colour</option>
+		</select>
+	</label>
+
+<select class="form-control" ng-model="css" ng-options="bootstrap.url as bootstrap.name for bootstrap in bootstraps">
+                </select>
+	<div class="form-group">
+                <label>Layout</label>
+                <select class="form-control" ng-model="layout" ng-options="layout.url as layout.name for layout in layouts"></select>
+            </div> -->
+
+	<button class="button button-block button-positive ion-gear-a" ng-click="saveSettings()">
+		Save settings
+	</button> 
+	</div>
+	</div>
+  </ion-content>
+</ion-view>
