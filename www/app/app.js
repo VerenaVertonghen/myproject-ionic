@@ -27,7 +27,7 @@ angular.module('starter',
 
 //.constant("apiUrl","http://localhost:6002")
 .constant("apiUrl","http://cosycare.eu-gb.mybluemix.net")
-.constant("welcomeNotificationId","556d7a25a198311f0033d3fb")
+.constant("welcomeNotificationId","55704b79a325fa1f00190e78")
 
 
 .config(function($stateProvider, $urlRouterProvider) {

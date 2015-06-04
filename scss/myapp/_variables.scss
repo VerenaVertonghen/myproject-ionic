@@ -87,6 +87,7 @@ $white: 					#FFFFFF;
 $black: 					#000000;
 $gray-dark:                 $concrete;
 $gray-light:                $silver;
+$select-color:              #999999;
 
 //image
 $my-avatar:75px;
@@ -222,9 +223,12 @@ $padding-large-horizontal:        16px !default;
 $padding-small-vertical:          5px !default;
 $padding-small-horizontal:        10px !default;
 
-$border-radius-base:              4px !default;
-$border-radius-large:             6px !default;
-$border-radius-small:             3px !default;
+// $border-radius-base:              4px !default;
+// $border-radius-large:             6px !default;
+// $border-radius-small:             3px !default;
+$border-radius-base:              0px !default;
+$border-radius-large:             0px !default;
+$border-radius-small:             0px !default;
 
 
 // Content

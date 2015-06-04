@@ -2,6 +2,12 @@
 	text-transform: capitalize;
 }
 
+.input-label{
+	padding: 4px 0px 4px 0px!important;
+	max-width: 50% !important;
+	text-align:left;
+}
+
 .quote{
 	color:$asbestos;
 	font-family:$light-font;
@@ -27,6 +33,14 @@
 	padding: 6px 0px 0px 16px;
 }
 
+#notification-text{
+	background-color: $stable;
+    width: 100%;
+    height: 10em;
+	padding:1em;
+	margin: auto;
+}
+
 .success-block{
 	color:$positive;
 	font-family:$light-font;
@@ -41,27 +55,36 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 /* FIX */
 .item{
 	background:none !important;
+	//border-radius: $button-border-radius;
+}
+
+.rounded{
 	border-radius: $button-border-radius;
 }
 
 .item-select select{
-	color:$positive;
+	color:$select-color;
+	//font-size:$font-size-small;
+	padding: 6px 30px;
+	//padding:0px;
 }
 
+#border-input{
+		input[type="text"]{
+		border-color:$start-border !important;
+		border-bottom: 1px $start-border solid !important;
+		}
+	}
+
 #border-div{
+	
+	
 	.item{
 		border-color:$start-border !important;
 	}
 	.checkbox input:before, .checkbox .checkbox-icon:before{
 		border-color:$start-border !important;
 	}
-}
-
-.not-rounded{
-	.item{
-		border-radius: 0px !important;
-	}
-	
 }
 
 input:-webkit-autofill {

@@ -1,14 +1,12 @@
 <ion-view view-title="Step 3">
   <ion-content padding="true" has-header="true">
   	<div id="container">
-	    <!-- <h1>Talk about it</h1> -->
 	    		<div id="user-img">
 			    <img src="img/expressions/{{feeling}}.png">
 			    </div>
 			    <p class="quote">"{{message}}"</p>
 
 		</div>
-		<!--placeholder="Write whatever you want here, it will stay private."-->
 		<form name="inputForm" ng-submit="postState(inputForm.$valid)" novalidate>
 		<textarea name="text" type="text" id="text" ng-model="input.text" ng-minlength="5" ng-maxlength="200" required></textarea>
 		<button class="button button-block button-positive ion-ios-paperplane" ng-disabled="inputForm.$invalid" ng-click="postState(text)">

@@ -1,12 +1,14 @@
 <ion-view view-title="Step 2">
   <ion-content padding="true">
   	<div id="container">
-	    <h3>Fill in some content</h3>
+	    <h3>Give it some nice content!</h3>
 	    <form name="notificationForm" ng-submit="postNotification(notificationForm.$valid)" novalidate>
 	    	<div id="border-div">
-			<span class="input-label">Title</span>
-			<input type="text" ng-model="notification.title" placeholder="awesome title" name="title" ng-minlength="2" ng-maxlength="20" required>
-			<p ng-show="notificationForm.title.$invalid && !notificationForm.firstname.$pristine" class="help-block">You have to fill in a title.</p>
+			<span class="input-label ">Title</span>
+			<div id="border-input">
+			<input type="text" ng-model="notification.title" placeholder="Awesome title" name="title" ng-minlength="2" ng-maxlength="20" required>
+			</div>
+			<p ng-show="notificationForm.title.$invalid && !notificationForm.title.$pristine" class="help-block">You have to fill in a title.</p>
 			<p ng-show="notificationForm.title.$valid" class="success-block">Check!</p>
 
 			<span class="input-label">Text</span>
