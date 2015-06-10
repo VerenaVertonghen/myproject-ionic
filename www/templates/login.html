@@ -15,7 +15,6 @@
         <li class="item item-checkbox">
           <label class="checkbox" >
             <input type="checkbox" ng-click="hideShowPassword()"/>
-            
           </label>
           Show password
         </li>
@@ -29,8 +28,8 @@
         Go to signup
       </button>
     </div>
-    <div ng-show="loginError" class="flash-alert">
-        Login failed, did you forget your password?
+    <div ng-show="loginError" class="flash-error">
+        Something went wrong, did you fill in the correct username and password? 
     </div>
     </div>
   </ion-content>

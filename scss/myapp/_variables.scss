@@ -1,3 +1,6 @@
+/* VARIABLES
+----------------------------------------*/
+
 // FONT
 // -------------------------------
 
@@ -105,12 +108,6 @@ $big-font-size: 1.7em;
 // Colors
 // -------------------------------
 
-
-
-
-
-
-
 // Theme 1 - Regular
 // -------------------------------
 $dark:                            $deep-sea !default;
@@ -129,35 +126,18 @@ $placeholder:                     $base-background-color !default;
 $button-light-border:             $light !default;
 $start-border:                    $dark !default;
 
-// Theme 2 - Calm
-// -------------------------------
-// $dark:                            $deep-sea !default;
-// $positive:                        $green-sea !default;
-// $light:                           $white !default;
-// $stable:                          $clouds !default;
-// $calm:                            $silver !default;
-// $balanced:                        $green-sea !default;
-// $energized:                       $lemon !default;
-// $assertive:                       $grapefruit !default;
-// $royal:                           $wisteria !default;
 
-// $base-background-color:           $green-sea !default;
-// $base-color:                      $dark !default;
-// $placeholder:                     $base-background-color !default;
-// $button-light-border:             $light;
-// $start-border:                    $dark !default;
-
-// Theme 3 - Spring
+// Theme 2 - Spring
 // -------------------------------
 
-// $dark:                            $strawberry !default;
+// $dark:                            $aubergine !default;
 // $positive:                        $melon !default;
 // $light:                           $white !default;
 // $stable:                          $clouds !default;
 // $calm:                            $silver !default;
 // $balanced:                        $green-sea !default;
 // $energized:                       $lemon !default;
-// $assertive:                       $grapefruit !default;
+// $assertive:                       $strawberry !default;
 // $royal:                           $wisteria !default;
 
 // $base-background-color:           $light !default;
@@ -166,25 +146,24 @@ $start-border:                    $dark !default;
 // $button-light-border:             $light;
 // $start-border:                    $dark !default;
 
-// Theme 4 - Neutral
+// Theme 3 - Neutral
 // -------------------------------
 
 // $dark:                            $asbestos !default;
-// $positive:                        $chrome !default;
+// $royal:                           $chrome !default;
 // $light:                           $white !default;
 // $stable:                          $clouds !default;
 // $calm:                            $chrome !default;
 // $balanced:                        $chrome !default;
 // $energized:                       $light-chrome !default;
-// $assertive:                       $chrome !default;
-// $royal:                           $chrome !default;
+// $assertive:                       $grapefruit !default;
+// $positive:                        $green-sea !default;
 
 // $base-background-color:           $light !default;
 // $base-color:                      $dark !default;
 // $placeholder:                     $base-background-color !default;
 // $button-light-border:             $light;
 // $start-border:                    $dark !default;
-
 
 
 // Base

@@ -15,6 +15,8 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
+/* VARIABLES
+----------------------------------------*/
 @font-face {
   font-family: "MontserratBlack";
   src: url("../fonts/Montserrat-Black.otf"); }
@@ -35,6 +37,8 @@ $dark:                            #444 !default;
   font-family: "MontserratHairline";
   src: url("../fonts/Montserrat-Hairline.otf"); }
 
+/* MIXINS
+----------------------------------------*/
 /*!
   Ionicons, v2.0.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
@@ -7697,6 +7701,12 @@ a.button {
 
 /* LAYOUT
 ----------------------------------------*/
+.item-content img {
+  width: 4em !important; }
+
+.item-complex {
+  padding: 10px 0px; }
+
 #big-avatar .item-avatar {
   min-height: 100px; }
   #big-avatar .item-avatar img {
@@ -7753,14 +7763,6 @@ h1 {
 
 #talk .item {
   border: none; }
-
-.flash-alert {
-  background: #f5f7fa;
-  color: #656d78;
-  font-family: 'MontserratLight', Helvetica, Arial, sans-serif;
-  font-size: 12px !important;
-  padding: 1em 1em;
-  border-radius: 0px; }
 
 .profile-top {
   margin-bottom: 0; }
@@ -7852,6 +7854,8 @@ h1 {
         max-width: 15em;
         max-height: 15em; } }
 
+/* BUTTONS
+----------------------------------------*/
 .button.button-light {
   border-color: #FFFFFF;
   background-color: #FFFFFF;
@@ -8105,6 +8109,26 @@ h1 {
       box-shadow: none;
       color: #fff; }
 
+/* TYPE
+----------------------------------------*/
+.flash-alert {
+  background: #f5f7fa;
+  font-family: 'MontserratLight', Helvetica, Arial, sans-serif;
+  padding: 20px 40px;
+  margin: 1em 0.5em; }
+
+.flash-error {
+  background: #fbcf61;
+  font-family: 'MontserratLight', Helvetica, Arial, sans-serif;
+  padding: 20px 40px;
+  margin: 1em 0.5em; }
+
+.flash-positive {
+  background: #16a085;
+  font-family: 'MontserratLight', Helvetica, Arial, sans-serif;
+  padding: 20px 40px;
+  margin: 1em 0.5em; }
+
 .cap {
   text-transform: capitalize; }
 
@@ -8123,7 +8147,7 @@ h1 {
   font-family: 'MontserratLight', Helvetica, Arial, sans-serif;
   font-size: 12px !important;
   text-align: left;
-  padding: 2em; }
+  padding: 0.4em 2em; }
 
 .emphasis {
   color: #16a085;
@@ -8134,12 +8158,10 @@ h1 {
   font-size: 12px;
   padding: 6px 0px 0px 16px; }
 
-#notification-text {
-  background-color: #f5f7fa;
-  width: 100%;
-  height: 10em;
-  padding: 1em;
-  margin: auto; }
+.notification-title {
+  color: #16a085;
+  font-family: 'MontserratRegular', Helvetica, Arial, sans-serif;
+  margin-bottom: 0 !important; }
 
 .success-block {
   color: #16a085;

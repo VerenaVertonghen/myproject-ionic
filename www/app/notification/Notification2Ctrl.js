@@ -21,7 +21,7 @@ angular.module('starter.NotificationCtrl').controller('Notification2Ctrl', ['$sc
             }else{
                 $scope.showadmin = false;
             }
-            console.log("$scope.showadmin",$scope.showadmin);
+            //console.log("$scope.showadmin",$scope.showadmin);
             loadCategories();
         }
 
@@ -39,12 +39,11 @@ angular.module('starter.NotificationCtrl').controller('Notification2Ctrl', ['$sc
 
         $scope.postNotification = function(isValid){
             if(isValid){
-                console.log("$scope.notification.text",$scope.notification.text);
-                console.log("$scope.notification.title",$scope.notification.title);
-                console.log("$scope.notification.categoryid",$scope.notification.categoryid);
+                //console.log("$scope.notification.text",$scope.notification.text);
+                //console.log("$scope.notification.title",$scope.notification.title);
+                //console.log("$scope.notification.categoryid",$scope.notification.categoryid);
                 var result = NotificationService.postNotification(encodedlogin,$scope.notification.title,$scope.notification.text,notificationtype,$scope.notification.categoryid);
                 result.success(createNotificationSuccess).error(createNotificationError);
-                
             }
                         
         };
@@ -55,14 +54,14 @@ angular.module('starter.NotificationCtrl').controller('Notification2Ctrl', ['$sc
         }
 
         function getCategoriesSuccess(success) {
-            console.log("success");
+            //console.log("success");
             $scope.allCategories = success;
-            console.log($scope.allCategories);
-            console.log($scope.allCategories[0]._id);
+            //console.log($scope.allCategories);
+            //console.log($scope.allCategories[0]._id);
         }
 
         function getCategoriesError(error) {
-            console.log("error");
+            //console.log("error");
             $scope.error = error;
         }
     }

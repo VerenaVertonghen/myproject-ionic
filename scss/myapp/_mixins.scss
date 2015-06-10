@@ -1,3 +1,6 @@
+/* MIXINS
+----------------------------------------*/
+
 @mixin rounded($pixels){
 	$radius: $pixels;
 	 -moz-border-radius: $radius;
@@ -12,4 +15,12 @@
 
 @mixin my-shadow($color){
   box-shadow: 0 3px darken($color,10);
+}
+
+@mixin my-flash($background,$text){
+	background:$background;
+	//color:$text;
+	font-family:$light-font;
+	padding: 20px 40px;
+	margin: 1em 0.5em;
 }

@@ -4,10 +4,9 @@ angular.module('starter.NotificationCtrl').controller('Notification1Ctrl', ['$sc
         
         $scope.allNotifications = [];
         $scope.notification = {};
+        $scope.showadmin = false;
         
         var encodedlogin = "";
-        // var admin = false;
-        $scope.showadmin = false;
         
         getLocalStorage();
 
@@ -39,7 +38,7 @@ angular.module('starter.NotificationCtrl').controller('Notification1Ctrl', ['$sc
 
         $scope.nextStep = function(){
             console.log("nextStep");
-            console.log("$scope.notification.type",$scope.notification.type)
+            console.log("$scope.notification.type",$scope.notification.type);
             if($scope.notification.type){
                 localStorageService.set("ls-type", $scope.notification.type);
                 $state.go('app.notification2');

@@ -1,0 +1,26 @@
+<ion-view view-title="Customize">
+  <ion-content padding="true">
+  	<div id="container">
+	<h3>Themes</h3>
+		<div id="border-div">
+		<!-- <label class="item item-input item-select">
+			<div class="input-label">
+			Theme 
+			</div>
+			<select>
+			<option selected>Dark</option>
+			<option>Light</option>
+			<option>Colour</option>
+			</select>
+		</label> -->
+		<label class="item item-input item-select">
+			<div class="input-label">
+			Theme 
+			</div>
+			<select class="form-control" ng-model="css" ng-options="style.url as style.name for style in styles">
+        	</select>
+		</label>
+		</div>
+	</div>
+  </ion-content>
+</ion-view>

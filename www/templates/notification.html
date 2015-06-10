@@ -2,11 +2,13 @@
   <ion-content>
   	<div id="container">
 	  	<div id="user-img">
-			<img ng-src="img/expressions/{{notification.category.name}}.png">
+			<img ng-src="img/expressions/{{notification.category.name}}.svg">
 		</div>
 		<h3>{{state.category.name}}</h3>
 	    <h4>{{notification.title}}</h4>
+	    <div id="notification-text" >
 	    <p class="textbox">{{notification.text}}</p>
+	    </div>
 	    <!-- <div class="button-padding">
 		    <button class="button button-block button-assertive ion-trash-a" ng-click="removeNotification()">
 				Remove

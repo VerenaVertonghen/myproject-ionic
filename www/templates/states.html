@@ -7,7 +7,7 @@
 			<div class="center-div">
 				<div class="cat-div" ng-repeat="category in allCategories">
 					<div class="cat-img" >
-						<img ng-src="img/expressions/{{category.name}}.png">
+						<img ng-src="img/expressions/{{category.name}}.svg">
 					</div>
 					<p class="quote">{{category.name}}</p>
 				</div>
@@ -17,13 +17,16 @@
   			<h3>View your expressions</h3>
 		    <button class="button button-block button-positive ion-ios-heart" ng-click="expressFeelings()">
 				Express your feelings
-			</button> 	 
+			</button> 
+			<!-- <button class="button button-block button-assertive ion-trash-a" ng-click="removeExpressions()">
+				Remove all expressions
+			</button> 	 --> 
 		    <div class="flash-alert" ng-show="allStates.length==0">
 		      <p>You don't have any entries yet.</p>
 		    </div>
 		    <div id="big-avatar" class="states" ng-repeat="state in allStates | orderBy:'-created_at' | limitTo:10">
 			    <a href="#/app/states/{{state._id}}" class="item item-avatar">
-				    <img ng-src="img/expressions/{{state.category.name}}.png">
+				    <img ng-src="img/expressions/{{state.category.name}}.svg">
 				    <h2>{{state.category.name}}</h2>
 				    <p class="quote">{{state.text | limitTo:30}} ...</p>
 			    </a>

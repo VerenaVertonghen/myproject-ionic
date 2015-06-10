@@ -4,11 +4,11 @@ angular.module("starter.filters", [])
 	    var out = [];
 	    angular.forEach(input, function(category){
 	      if(category.feeling === 'up'){
-	        out.push(category)
+	        out.push(category);
 	      }
 	    })
 	    return out;
-	  }
+	  };
 	 
 	})
 	.filter('downFilter', function () {
@@ -16,11 +16,16 @@ angular.module("starter.filters", [])
 	    var out = [];
 	    angular.forEach(input, function(category){
 	      if(category.feeling === 'down'){
-	        out.push(category)
+	        out.push(category);
 	      }
 	    })
 	    return out;
-	  }
+	  };
 	 
+	})
+	.filter('reverse', function() {
+	  return function(items) {
+	    return items.slice().reverse();
+	  };
 	})
 	;

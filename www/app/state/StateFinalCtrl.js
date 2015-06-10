@@ -2,8 +2,6 @@ angular.module('starter.StateCtrl').controller('StateFinalCtrl', ['$scope', '$st
     function($scope, $state, $ionicHistory, StateService, NotificationService, UserService, localStorageService) {
         console.log('into StateFinalCtrl');
 
-        // $state.reload();
-
         var encodedlogin = "";
         var feeling = "";
         var catid = "";
@@ -14,23 +12,13 @@ angular.module('starter.StateCtrl').controller('StateFinalCtrl', ['$scope', '$st
         $scope.notification = [];
 
         getLocalStorage();
-        //$ionicHistory.clearHistory();
 
         function getLocalStorage() {
             encodedlogin = localStorageService.get("ls-encoded");
             feeling = localStorageService.get("ls-feeling");
             catid = localStorageService.get("ls-catid");
             stateid = localStorageService.get("ls-stateid");
-
             loadState();
-            
-            // //IMPORTANT include some random messages in the api
-            // if(feeling=='up'){
-            //     $scope.message="Glad to hear you are doing well! You can talk to me about anything.";
-            // }
-            // if(feeling=='down'){
-            //     $scope.message="Sorry to hear you're having a bad moment, talking about it might make you feel a little better.";
-            // }
         }
 
         function loadState() {
@@ -40,7 +28,7 @@ angular.module('starter.StateCtrl').controller('StateFinalCtrl', ['$scope', '$st
 
         function getStateSuccess(success) {
             $scope.state = success;
-            console.log($scope.state);
+            //console.log($scope.state);
             loadNotification();
         }
 
@@ -55,8 +43,8 @@ angular.module('starter.StateCtrl').controller('StateFinalCtrl', ['$scope', '$st
 
         function getNotificationSuccess(success) {
             $scope.notification = success;
-            console.log(" notification success",success);
-            console.log("$scope.notification._id",$scope.notification._id);
+            //console.log(" notification success",success);
+            //console.log("$scope.notification._id",$scope.notification._id);
             notificationid = $scope.notification._id;
             addNotificationToUser();
         }
@@ -72,7 +60,7 @@ angular.module('starter.StateCtrl').controller('StateFinalCtrl', ['$scope', '$st
 
         function addNotificationToUserSuccess(success) {
             $scope.notificationsuccess = success;
-            console.log("addNotificationToUserSuccess success",success);
+            //console.log("addNotificationToUserSuccess success",success);
         }
 
         function addNotificationToUserError(error) {
@@ -81,6 +69,6 @@ angular.module('starter.StateCtrl').controller('StateFinalCtrl', ['$scope', '$st
 
         $scope.toExpressions = function(){
         	$state.go('app.states');
-    	}
+    	};
     }
 ]);

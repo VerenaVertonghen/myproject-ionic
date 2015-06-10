@@ -1,11 +1,13 @@
-angular.module('starter.UserService', []).factory('UserService', ['$http', '$q', '$base64', 'apiUrl', 'welcomeNotificationId',
-    function($http, $q, $base64, apiUrl, welcomeNotificationId) {
+angular.module('starter.UserService', []).factory('UserService', ['$http', '$q', '$base64', 'apiUrl', 'welcomeNotificationId','cleanupNotificationId',
+    function($http, $q, $base64, apiUrl, welcomeNotificationId, cleanupNotificationId) {
         return {
             getUser: getUser,
             createUser: createUser,
             updateUserState: updateUserState,
             addStateToUser: addStateToUser,
-            addNotificationToUser: addNotificationToUser
+            addNotificationToUser: addNotificationToUser,
+            removeNotifications: removeNotifications,
+            removeExpressions: removeExpressions
         };
 
         function getUser($encodedLogin) {
@@ -17,7 +19,6 @@ angular.module('starter.UserService', []).factory('UserService', ['$http', '$q',
                 method: "get",
                 url: apiUrl + "/myprofile",
                 headers: {
-                    // 'Host': 'http://cosycare.eu-gb.mybluemix.net/',
                     'Authorization': 'Basic ' + $encodedLogin
                 }
             });
@@ -57,6 +58,45 @@ angular.module('starter.UserService', []).factory('UserService', ['$http', '$q',
                 },
                 data: {
                     'notification':$notificationid
+                }
+            });
+            return request;
+        }
+
+        function removeNotifications($encodedLogin) {
+            console.log("into Service removeNotifications");
+            console.log("apiUrl", apiUrl);
+            console.log("encodedLogin",$encodedLogin);
+            console.log("cleanupNotificationId",cleanupNotificationId)
+
+            var request = $http({
+                method: "put",
+                url: apiUrl + "/updateprofile",
+                headers: {
+                    'Authorization': 'Basic ' + $encodedLogin
+                },
+                data: {
+                    "notifications": [
+                        cleanupNotificationId
+                    ]
+                }
+            });
+            return request;
+        }
+
+        function removeExpressions($encodedLogin) {
+            console.log("into Service removeExpressions");
+            console.log("apiUrl", apiUrl);
+            console.log("encodedLogin",$encodedLogin);
+
+            var request = $http({
+                method: "put",
+                url: apiUrl + "/updateprofile",
+                headers: {
+                    'Authorization': 'Basic ' + $encodedLogin
+                },
+                data: {
+                    "state":{}
                 }
             });
             return request;

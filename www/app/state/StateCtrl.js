@@ -14,14 +14,14 @@ angular.module('starter.StateCtrl').controller('StateCtrl', ['$scope', '$state',
         }
 
         function loadState() {
-        	console.log("$stateParams.stateId",$stateParams.stateId);
+        	//console.log("$stateParams.stateId",$stateParams.stateId);
             var result = StateService.getState(encodedlogin,$stateParams.stateId);
             result.success(getStateSuccess).error(getStateError);
         }
 
         function getStateSuccess(success) {
             $scope.state = success;
-            console.log(" state success",success);
+            //console.log("state success",success);
         }
 
         function getStateError(error) {

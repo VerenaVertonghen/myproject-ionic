@@ -1,12 +1,11 @@
-angular.module('starter.NotificationCtrl').controller('NotificationsCtrl', ['$scope', '$state', 'NotificationService', 'localStorageService',
-    function($scope, $state, NotificationService, localStorageService) {
+angular.module('starter.NotificationCtrl').controller('NotificationsCtrl', ['$scope', '$state', 'NotificationService', 'UserService', 'localStorageService',
+    function($scope, $state, NotificationService, UserService, localStorageService) {
     	console.log('into NotificationsCtrl');
         
         $scope.allNotifications = [];
+        $scope.showadmin = false;
         
         var encodedlogin = "";
-        // var admin = false;
-        $scope.showadmin = false;
         
         getLocalStorage();
 
@@ -18,8 +17,7 @@ angular.module('starter.NotificationCtrl').controller('NotificationsCtrl', ['$sc
             }else{
                 $scope.showadmin = false;
             }
-            console.log("$scope.showadmin",$scope.showadmin);
-
+            //console.log("$scope.showadmin",$scope.showadmin);
             loadNotifications();
 
         }
@@ -31,16 +29,35 @@ angular.module('starter.NotificationCtrl').controller('NotificationsCtrl', ['$sc
 
         function getNotificationsSuccess(success) {
             $scope.allNotifications = success;
-            console.log("success",success);
+            //console.log("success",success);
         }
 
         function getNotificationsError(error) {
             $scope.error = error;
         }
 
+        function removeAllNotifications() {
+            var result = UserService.removeNotifications(encodedlogin);
+            result.success(removeAllNotificationsSuccess).error(removeAllNotificationsError);
+        }
+
+        function removeAllNotificationsSuccess(success) {
+            $scope.allNotificationsSuccess = success;
+            //console.log("remove success",success);
+            $state.go('app.notifications');
+        }
+
+        function removeAllNotificationsError(error) {
+            $scope.error = error;
+            //console.log("remove error",error);
+        }
 
         $scope.createNotification = function(){
             $state.go('app.notification1');
+        };
+
+        $scope.removeNotifications = function(){
+            removeAllNotifications();
         };
     }
 ]);

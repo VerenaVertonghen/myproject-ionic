@@ -12,6 +12,9 @@
     "angular-ui-router": "latest",
     "angular-resource": "latest",
     "angular-base64": "latest",
-    "angular-local-storage": "~0.2.1"
+    "angular-local-storage": "~0.2.1",
+    "ibmdata": "git+https://hub.jazz.net/git/bluemixmobilesdk/ibmdata-javascript",
+    "ibmbluemix": "git+https://hub.jazz.net/git/bluemixmobilesdk/ibmbluemix-javascript"
+
   }
 }

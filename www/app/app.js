@@ -7,7 +7,7 @@
 angular.module('starter', 
 ['ionic', 'base64', 'ui.router','LocalStorageModule',
   'starter.controllers', 'starter.services','starter.directives','starter.filters',
-  'starter.UserService','starter.StateService','starter.CategoryService','starter.NotificationService',
+  'starter.AppService', 'starter.UserService','starter.StateService','starter.CategoryService','starter.NotificationService',
   'starter.UserCtrl','starter.StateCtrl','starter.CategoryCtrl','starter.NotificationCtrl'])
 
 .run(function($ionicPlatform) {
@@ -27,8 +27,8 @@ angular.module('starter',
 
 //.constant("apiUrl","http://localhost:6002")
 .constant("apiUrl","http://cosycare.eu-gb.mybluemix.net")
-.constant("welcomeNotificationId","55704b79a325fa1f00190e78")
-
+.constant("welcomeNotificationId","5576b3ae0ff2901f0030fe31")
+.constant("cleanupNotificationId","5576b3f90ff2901f0030fe32")
 
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
@@ -65,22 +65,22 @@ angular.module('starter',
     }
   })
 
-  .state('app.caretaker', {
-    url: "/caretaker",
-    cache: false,
-    views: {
-      'menuContent': {
-        templateUrl: "templates/caretaker.html"
-      }
-    }
-  })
-
   .state('app.settings', {
     cache: false,
     url: "/settings",
     views: {
       'menuContent': {
         templateUrl: "templates/settings.html"
+      }
+    }
+  })
+
+  .state('app.customize', {
+    cache: false,
+    url: "/customize",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/customize.html"
       }
     }
   })

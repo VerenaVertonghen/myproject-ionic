@@ -1,5 +1,5 @@
-angular.module('starter.StateCtrl').controller('StatesCtrl', ['$scope', '$state', 'StateService', 'CategoryService', 'localStorageService',
-    function($scope, $state, StateService, CategoryService, localStorageService) {
+angular.module('starter.StateCtrl').controller('StatesCtrl', ['$scope', '$state', 'StateService', 'CategoryService', 'UserService', 'localStorageService',
+    function($scope, $state, StateService, CategoryService, UserService, localStorageService) {
         console.log('into StatesCtrl');
 
         $scope.allStates = [];
@@ -18,7 +18,7 @@ angular.module('starter.StateCtrl').controller('StatesCtrl', ['$scope', '$state'
             }else{
                 $scope.showadmin = false;
             }
-            console.log("$scope.showadmin",$scope.showadmin);
+            //console.log("$scope.showadmin",$scope.showadmin);
             loadStates();
             loadCategories();
         }
@@ -26,12 +26,11 @@ angular.module('starter.StateCtrl').controller('StatesCtrl', ['$scope', '$state'
         function loadStates() {
             var result = StateService.getMyStates(encodedlogin);
             result.success(getStatesSuccess).error(getStatesError);
-            // $state.reload();
         }
 
         function getStatesSuccess(success) {
             $scope.allStates = success;
-            console.log($scope.allStates);
+            //console.log($scope.allStates);
         }
 
         function getStatesError(error) {
@@ -45,15 +44,35 @@ angular.module('starter.StateCtrl').controller('StatesCtrl', ['$scope', '$state'
 
         function getCategoriesSuccess(success) {
             $scope.allCategories = success;
-            console.log($scope.allCategories);
+            //console.log($scope.allCategories);
         }
 
         function getCategoriesError(error) {
             $scope.error = error;
         }
 
+        function removeAllExpressions() {
+            var result = UserService.removeExpressions(encodedlogin);
+            result.success(removeAllExpressionsSuccess).error(removeAllExpressionsError);
+        }
+
+        function removeAllExpressionsSuccess(success) {
+            $scope.allExpressionsSuccess = success;
+            console.log("remove success",success);
+            $state.go('app.states');
+        }
+
+        function removeAllExpressionsError(error) {
+            $scope.error = error;
+            //console.log("remove error",error);
+        }
+
         $scope.expressFeelings = function(){
             $state.go('app.state1');
+        };
+
+        $scope.removeExpressions = function(){
+            removeAllExpressions();
         };
     }
 ]);

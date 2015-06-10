@@ -1,3 +1,18 @@
+/* TYPE
+----------------------------------------*/
+
+.flash-alert{
+	@include my-flash($stable,$concrete);
+}
+
+.flash-error{
+	@include my-flash($energized,$light);
+}
+
+.flash-positive{
+	@include my-flash($positive,$light);
+}
+
 .cap{
 	text-transform: capitalize;
 }
@@ -19,7 +34,7 @@
 	font-family:$light-font;
 	font-size:$font-size-small !important;
 	text-align:left;
-	padding:2em;
+	padding:0.4em 2em;
 }
 
 .emphasis{
@@ -33,12 +48,18 @@
 	padding: 6px 0px 0px 16px;
 }
 
+.notification-title{
+	color:$positive;
+	font-family:$regular-font;
+	margin-bottom:0 !important;
+}
+
 #notification-text{
-	background-color: $stable;
-    width: 100%;
-    height: 10em;
-	padding:1em;
-	margin: auto;
+	//background-color: $stable !important;
+    //width: 100%;
+    //height: 10em;
+	//padding:1em;
+	//margin: 1em !important;
 }
 
 .success-block{
@@ -55,7 +76,6 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 /* FIX */
 .item{
 	background:none !important;
-	//border-radius: $button-border-radius;
 }
 
 .rounded{
@@ -64,21 +84,17 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 
 .item-select select{
 	color:$select-color;
-	//font-size:$font-size-small;
 	padding: 6px 30px;
-	//padding:0px;
 }
 
 #border-input{
-		input[type="text"]{
-		border-color:$start-border !important;
-		border-bottom: 1px $start-border solid !important;
-		}
+	input[type="text"]{
+	border-color:$start-border !important;
+	border-bottom: 1px $start-border solid !important;
 	}
+}
 
 #border-div{
-	
-	
 	.item{
 		border-color:$start-border !important;
 	}

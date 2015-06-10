@@ -5,8 +5,8 @@ angular.module('starter.StateCtrl').controller('State1Ctrl', ['$scope', '$state'
         $scope.allStates = [];
 
         $scope.nextStep = function(feeling){
-            console.log("nextStep");
-            console.log("feeling",feeling);
+            //console.log("nextStep");
+            //console.log("feeling",feeling);
             localStorageService.set("ls-feeling", feeling);
             $state.go('app.state2');
         };

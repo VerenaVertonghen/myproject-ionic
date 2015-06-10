@@ -29,7 +29,7 @@ angular.module('starter.UserCtrl').controller('RegisterCtrl', ['$scope', '$state
         // Go to Login
         $scope.toLogin = function() {
             $state.go('login');
-        }
+        };
 
         // Hide & show password function
         $scope.hideShowPassword = function() {

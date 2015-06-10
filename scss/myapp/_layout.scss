@@ -1,8 +1,23 @@
 /* LAYOUT
 ----------------------------------------*/
 
-#big-avatar{
+//Item images
+.item-content{
+	img{
+		width:4em !important;
+	}
+}
 
+//Menu items
+@mixin item-pad(){
+	padding: 10px 0px;
+}
+
+.item-complex{
+	@include item-pad();
+}
+
+#big-avatar{
 	.item-avatar{
 		min-height: 100px;
 		img{
@@ -20,9 +35,6 @@
 	width:100%;
 	text-align:center;
 
-	// h3{
-	// 	text-align: center;
-	// }
 	p{
 		margin-left:auto;
 		margin-right:auto;
@@ -41,7 +53,6 @@
 
 .text-block{
 	text-align:left;
-	//padding:0.4em;
 }
 
 h1{
@@ -63,20 +74,13 @@ h1{
 }
 
 .cat-div{
-	//float:left;
-	//padding:0.3em;
 	text-align:center;
 }
 
 .cat-img{
-
 	img{
-		//float:left;
-	//margin-right:0.5em;
-	//padding: 1em;
-	width:8em;
+		width:8em;
 	}
-	
 }
 
 #text{
@@ -87,29 +91,11 @@ h1{
 	margin: auto;
 }
 
-
-
-
-
 #talk{
 	.item{
 		border:none;
 	}
-
-	.item-avatar{
-	}
 }
-
-.flash-alert{
-	background:$stable;
-	color:$concrete;
-	font-family:$light-font;
-	font-size:$font-size-small !important;
-	padding:1em 1em;
-	border-radius: $border-radius-base;
-}
-
-
 
 .profile-top{
 	margin-bottom: 0;
@@ -131,8 +117,6 @@ h1{
 		border:none;
 	}
 }
-
-
 
 #user-img{
 	text-align:center;
@@ -186,7 +170,6 @@ h1{
 	img{
 		width: 14em;
 		margin: 1em 0em;
-		//@include my-pad();
 
 		@media (min-width: $tablet-portrait){
 			width: 25em;
@@ -206,7 +189,6 @@ h1{
 	img{
 		width: 20em;
 		margin: 3em 0em;
-		//@include my-pad();
 
 		@media (min-width: $tablet-portrait){
 			width: 25em;

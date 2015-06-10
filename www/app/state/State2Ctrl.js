@@ -28,8 +28,6 @@ angular.module('starter.StateCtrl').controller('State2Ctrl', ['$scope', '$state'
         function updateUserSuccess(success) {
             $scope.state = success;
             $state.go('app.statefinal');
-
-            //$state.go($state.cur'app.statefinal');
         }
 
         function updateUserError(error) {
@@ -52,7 +50,7 @@ angular.module('starter.StateCtrl').controller('State2Ctrl', ['$scope', '$state'
 
         function getCategoriesSuccess(success) {
             $scope.allCategories = success;
-            console.log($scope.allCategories);
+            //console.log($scope.allCategories);
         }
 
         function getCategoriesError(error) {
