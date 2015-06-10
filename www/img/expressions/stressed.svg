@@ -515,7 +515,7 @@ AMCf8OWBumgGZirTLe0p4Mhh9p7uczHgX44/fQ3/G6UBaACAQvF9BJMsLRf4HoIGZbKxubC7+Ga9
 W8o1S2v4Pq1/21i/B2gAgB7gNxKOjdkBT33MHNTRGPzTQH83kosneo8fz+NufYAGAMg0X0IYrYyP
 1Lb5PM7Sq5DLfZC/H3kQ+fn3x8YUPkADAJQof7fBqGgSxsRnz0hLVx0PifQqsn9Xq/Iq4lflPlWe
 RB7F4O6fuTsfoAEA8BsVec3AIGVgB6mK+JJDpVJjabNi/imGGmv/EiWfUm/K++69pXvv/fvmeFr/
-GHnXQd60GfQ9LfzogOz6LsAAoBCxEc8yOboAAAAASUVORK5CYII=" transform="matrix(0.9766 0 0 0.9766 0 0)">
+GHnXQd60GfQ9LfzogOz6LsAAoBCxEc8yOboAAAAASUVORK5CYII=" transform="matrix(0.9766 0 0 0.9766 0.0039 0.0039)">
 	</image>
 </g>
 <g id="Layer_12" display="none">
@@ -939,7 +939,7 @@ DBQUkZ9scwqw5FC+b/fH1Q5/l/on38N/i6IBQAIA4Co8jyAr2W4X8ByC3CKyEyYXegpP1jsqYj/Z
 7uHzsP4xwv17ACQAAF7AOxKmVkcHOLKoIweZkBhEqKM/qcZx9Rs9By/Pw976AEgAAKTGtxBSiEin
 RpoP/p6WbEchW72TP6fGeTXe/+8rhCF8ACQAACbFZxskV5OEIPXvHMnIttVxAjV8DPbveifijhq8
 Ve41EVfVCFY7d/479s4HQAIAADoifZQMxBURqBEx1eBbDlFFBJBtsuLHqxgC6NNDlHhIPeSjxx6R
-bd97fvyF+m09VI2HGnH/g06f4zU+OgB5/Z8AAwC4FMQm30JW0AAAAABJRU5ErkJggg==" transform="matrix(0.9766 0 0 0.9766 0 0)">
+bd97fvyF+m09VI2HGnH/g06f4zU+OgB5/Z8AAwC4FMQm30JW0AAAAABJRU5ErkJggg==" transform="matrix(0.9766 0 0 0.9766 0.0039 0.0039)">
 	</image>
 </g>
 <g id="Layer_18" display="none">
@@ -1343,11 +1343,11 @@ BUw5dN/V/bpgh78o+Kc+w79IagAKACBcdBxBWQk8LtAxBJVMlBcGFyYXHay3xsQyCTzD19v6a4Xn
 9wAFAJACdEXCa4J3BzTKBO8clKIwSFRHvyEY64JX9Bo6PY+19QEKAMDV9BFCYRPFg3HtFX8vJoGt
 kCO9k98cjC3BuPy/twu38AEKAMCndG+DQsEioUjw7xoFJbDUce5gRHns33XJxP5g6FK5O03sCMa2
 YOeuf2ftfIACAICD1P8oBnKYyGYTmYKhjxzSm4iWwGDFf85iiJZ/b6Kkt9SP/eO1oxJY915fPxu8
-Wj8ZjCM2ceiKTl/jPB8d4F7/J8AAaxK0mcCv+aEAAAAASUVORK5CYII=" transform="matrix(0.9766 0 0 0.9766 0 0)">
+Wj8ZjCM2ceiKTl/jPB8d4F7/J8AAaxK0mcCv+aEAAAAASUVORK5CYII=" transform="matrix(0.9766 0 0 0.9766 0.0039 0.0039)">
 	</image>
 </g>
-<g id="white_line">
-	<circle fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" cx="250" cy="250" r="150"/>
+<g id="white_line" display="none">
+	<circle display="inline" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" cx="250" cy="250" r="150"/>
 </g>
 <g id="dark_line">
 	<circle fill="none" stroke="#112539" stroke-width="6" stroke-miterlimit="10" cx="250" cy="250" r="150"/>
@@ -1358,11 +1358,11 @@ Wj8ZjCM2ceiKTl/jPB8d4F7/J8AAaxK0mcCv+aEAAAAASUVORK5CYII=" transform="matrix(0.97
 	<path display="inline" fill="#112539" d="M354,234c-9,0-9,9-9,9s0-9-9-9c0,0-9,0-9,9c0,0,0,9,18,18c18-9,18-18,18-18
 		C363,234,354,234,354,234z"/>
 </g>
-<g id="vert_eyes" display="none">
-	<path display="inline" fill="#112539" d="M140,261c0,2.209-1.791,4-4,4l0,0c-2.209,0-4-1.791-4-4v-22c0-2.209,1.791-4,4-4l0,0
-		c2.209,0,4,1.791,4,4V261z"/>
-	<path display="inline" fill="#112539" d="M368,261c0,2.209-1.791,4-4,4l0,0c-2.209,0-4-1.791-4-4v-22c0-2.209,1.791-4,4-4l0,0
-		c2.209,0,4,1.791,4,4V261z"/>
+<g id="vert_eyes">
+	<path fill="#112539" d="M140,261c0,2.209-1.791,4-4,4l0,0c-2.209,0-4-1.791-4-4v-22c0-2.209,1.791-4,4-4l0,0c2.209,0,4,1.791,4,4
+		V261z"/>
+	<path fill="#112539" d="M368,261c0,2.209-1.791,4-4,4l0,0c-2.209,0-4-1.791-4-4v-22c0-2.209,1.791-4,4-4l0,0c2.209,0,4,1.791,4,4
+		V261z"/>
 </g>
 <g id="wink_eyes" display="none">
 	<path display="inline" fill="#112539" d="M140,261c0,2.209-1.791,4-4,4l0,0c-2.209,0-4-1.791-4-4v-22c0-2.209,1.791-4,4-4l0,0
@@ -1421,16 +1421,6 @@ Wj8ZjCM2ceiKTl/jPB8d4F7/J8AAaxK0mcCv+aEAAAAASUVORK5CYII=" transform="matrix(0.97
 	<path display="inline" fill="#112539" d="M123.05,260.606c-1.562,1.562-4.095,1.562-5.656-0.001l0,0
 		c-1.563-1.561-1.563-4.094,0-5.656l15.557-15.557c1.562-1.562,4.094-1.561,5.656,0l0,0c1.562,1.563,1.563,4.096,0,5.657
 		L123.05,260.606z"/>
-</g>
-<g id="_x3E__x3C__eyes">
-	<path fill="#112539" d="M368.949,231.393c1.562-1.562,4.095-1.562,5.656,0.001l0,0c1.563,1.561,1.563,4.094,0,5.656l-15.556,15.557
-		c-1.563,1.562-4.095,1.561-5.656,0l0,0c-1.563-1.563-1.563-4.096-0.001-5.657L368.949,231.393z"/>
-	<path fill="#112539" d="M374.606,262.949c1.562,1.562,1.562,4.095-0.001,5.656l0,0c-1.561,1.563-4.094,1.563-5.656,0
-		l-15.557-15.557c-1.562-1.562-1.561-4.094,0-5.656l0,0c1.563-1.562,4.096-1.563,5.657,0L374.606,262.949z"/>
-	<path fill="#112539" d="M131.05,268.606c-1.562,1.562-4.095,1.562-5.656-0.001l0,0c-1.563-1.561-1.563-4.094,0-5.656l15.556-15.557
-		c1.562-1.562,4.095-1.561,5.656,0l0,0c1.562,1.563,1.563,4.096,0,5.657L131.05,268.606z"/>
-	<path fill="#112539" d="M125.393,237.05c-1.562-1.562-1.562-4.095,0.001-5.656l0,0c1.561-1.563,4.094-1.563,5.656,0l15.557,15.557
-		c1.562,1.562,1.561,4.094,0,5.656l0,0c-1.563,1.562-4.096,1.563-5.657,0L125.393,237.05z"/>
 </g>
 <g id="Layer_28" display="none">
 	<path display="inline" fill="#112539" d="M270.606,289.949c1.562,1.562,1.562,4.095-0.001,5.656l0,0
@@ -1502,12 +1492,24 @@ Wj8ZjCM2ceiKTl/jPB8d4F7/J8AAaxK0mcCv+aEAAAAASUVORK5CYII=" transform="matrix(0.97
 	<path display="inline" fill="#112539" d="M219,55c-9,0-9,9-9,9s0-9-9-9c0,0-9,0-9,9c0,0,0,9,18,18c18-9,18-18,18-18
 		C228,55,219,55,219,55z"/>
 </g>
-<g id="Layer_30">
-	
-		<line fill="none" stroke="#112539" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="333.5" y1="99" x2="333.5" y2="180"/>
-	
-		<line fill="none" stroke="#112539" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="342.5" y1="99" x2="342.5" y2="180"/>
-	
-		<line fill="none" stroke="#112539" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="351.5" y1="99" x2="351.5" y2="180"/>
+<g id="stress">
+	<path fill="#112539" d="M316,116c0,2.209-1.791,4-4,4l0,0c-2.209,0-4-1.791-4-4V94c0-2.209,1.791-4,4-4l0,0c2.209,0,4,1.791,4,4
+		V116z"/>
+	<path fill="#112539" d="M316,137c0,2.209-1.791,4-4,4l0,0c-2.209,0-4-1.791-4-4v-22c0-2.209,1.791-4,4-4l0,0c2.209,0,4,1.791,4,4
+		V137z"/>
+	<path fill="#112539" d="M316,161c0,2.209-1.791,4-4,4l0,0c-2.209,0-4-1.791-4-4v-22c0-2.209,1.791-4,4-4l0,0c2.209,0,4,1.791,4,4
+		V161z"/>
+	<path fill="#112539" d="M333,116c0,2.209-1.791,4-4,4l0,0c-2.209,0-4-1.791-4-4V94c0-2.209,1.791-4,4-4l0,0c2.209,0,4,1.791,4,4
+		V116z"/>
+	<path fill="#112539" d="M333,137c0,2.209-1.791,4-4,4l0,0c-2.209,0-4-1.791-4-4v-22c0-2.209,1.791-4,4-4l0,0c2.209,0,4,1.791,4,4
+		V137z"/>
+	<path fill="#112539" d="M333,161c0,2.209-1.791,4-4,4l0,0c-2.209,0-4-1.791-4-4v-22c0-2.209,1.791-4,4-4l0,0c2.209,0,4,1.791,4,4
+		V161z"/>
+	<path fill="#112539" d="M351,116c0,2.209-1.791,4-4,4l0,0c-2.209,0-4-1.791-4-4V94c0-2.209,1.791-4,4-4l0,0c2.209,0,4,1.791,4,4
+		V116z"/>
+	<path fill="#112539" d="M351,137c0,2.209-1.791,4-4,4l0,0c-2.209,0-4-1.791-4-4v-22c0-2.209,1.791-4,4-4l0,0c2.209,0,4,1.791,4,4
+		V137z"/>
+	<path fill="#112539" d="M351,161c0,2.209-1.791,4-4,4l0,0c-2.209,0-4-1.791-4-4v-22c0-2.209,1.791-4,4-4l0,0c2.209,0,4,1.791,4,4
+		V161z"/>
 </g>
 </svg>
