@@ -2,30 +2,18 @@
   <ion-content padding="true">
     <div id="container">
     	<div class="center">
-    		<div>
-	    		<div id="user-img">
-			      	<img src="img/expressions/default.svg">
-			    </div>
-		    </div>
-    		<!-- <div ng-show="showadmin">
-	    		<div id="user-img">
-			      	<img src="img/expressions/default.svg">
-			    </div>
-		    </div>
 
-		    <div ng-show="!showadmin">
-		    	<div id="user-img" ng-show="allStates.length==0">
-			      	<img src="img/expressions/default.svg">
-			    </div>
-				<div id="user-img" ng-show="!allStates.length==0" ng-repeat="state in allStates | orderBy:'-created_at' | limitTo:1">
-					<img ng-src="img/expressions/{{state.category.name}}.svg">
-				</div>
-			</div> -->
-
-			<h3 class="cap">{{singleUser.firstname}} {{singleUser.lastname}}</h3>
-		    <p>{{singleUser.email}}</p>
+	    	<div id="user-img" ng-show="allStates.length==0">
+		      	<img src="img/expressions/default.svg">
+		    </div>
+			<div id="user-img" ng-show="!allStates.length==0" ng-repeat="state in allStates | orderBy:'-created_at' | limitTo:1">
+				<h3 class="welcome">Welcome back <span class="cap">{{singleUser.firstname}}</span>!</h3>
+				<p class="quote">The last time you time you expressed your feelings you were feeling {{state.category.name}}, are you still feeling the same?</p>
+				<img ng-src="img/expressions/{{state.category.name}}.svg">
+			</div>
+			<h4 class="cap">{{singleUser.firstname}} {{singleUser.lastname}}</h4>
+		    <p class="quote">{{singleUser.email}}</p>
 	    </div>
-    <!-- <p><a id="edit-link" href="#/edit" class="button icon-left ion-edit button-dark">Edit</a></p> -->
     <div ng-show="!showadmin">
     <button class="button button-block button-positive ion-ios-heart" ng-click="expressFeelings()">
 		Express your feelings

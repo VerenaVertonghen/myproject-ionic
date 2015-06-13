@@ -10,11 +10,11 @@
 			</div>
 			<p ng-show="notificationForm.title.$invalid && !notificationForm.title.$pristine" class="help-block">You have to fill in a title.</p>
 			<p ng-show="notificationForm.title.$valid" class="success-block">Check!</p>
-
+			<br>
 			<span class="input-label">Text</span>
-			<textarea name="text" type="text" id="notification-text" ng-model="notification.text" ng-minlength="5" ng-maxlength="500" required></textarea>
+			<textarea name="text" type="text" id="create-notification-text" ng-model="notification.text" ng-minlength="5" ng-maxlength="500" required></textarea>
 			<p ng-show="notificationForm.text.$invalid && !notificationForm.text.$pristine" class="help-block">You have to fill in some text.</p>
-
+			<br>
 			<span class="input-label">Category</span>
 			<div class="list">
 			  <label class="item item-input item-select">
@@ -23,7 +23,7 @@
 			    </div>
 			    <select ng-model="notification.categoryid">
 
-			      <option ng-repeat="category in allCategories"  value="{{category._id}}">{{category.name}}</option>
+			      <option ng-repeat="category in allCategories" ng-if="category.name != 'app'" value="{{category._id}}">{{category.name}}</option>
 			    </select>
 			  </label>
 			</div>

@@ -30,6 +30,7 @@ angular.module('starter.UserCtrl')
         function getLocalStorage() {
             encodedlogin = localStorageService.get("ls-encoded");
             loadUser();
+            loadStates();
             var admin = localStorageService.get("ls-admin");
             if(admin){
                 $scope.showadmin = true;
@@ -48,6 +49,20 @@ angular.module('starter.UserCtrl')
         }
 
         function getUserError(error) {
+            $scope.error = error;
+        }
+
+        function loadStates() {
+            var result = StateService.getMyStates(encodedlogin);
+            result.success(getStatesSuccess).error(getStatesError);
+        }
+
+        function getStatesSuccess(success) {
+            $scope.allStates = success;
+            //console.log($scope.allStates);
+        }
+
+        function getStatesError(error) {
             $scope.error = error;
         }
 

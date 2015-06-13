@@ -10,8 +10,24 @@ angular.module('starter',
   'starter.AppService', 'starter.UserService','starter.StateService','starter.CategoryService','starter.NotificationService',
   'starter.UserCtrl','starter.StateCtrl','starter.CategoryCtrl','starter.NotificationCtrl'])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $ionicPopup) {
   $ionicPlatform.ready(function() {
+    //Check if there is an internetconnection
+    if(window.Connection){
+      if(navigator.connection.type == Connection.NONE){
+        $ionicPopup.confirm({
+          title: "Internet disconnected",
+          content: "Woops, no internet! Without it you won't be able to use the app."
+        })
+        .then(function(result){
+          if(!result){
+            ionic.Platform.exitApp();
+          }
+        });
+      }
+    }
+
+
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
     // if (window.cordova && window.cordova.plugins.Keyboard) {
@@ -219,5 +235,5 @@ angular.module('starter',
   ;
   
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/register');
+  $urlRouterProvider.otherwise('/login');
 });

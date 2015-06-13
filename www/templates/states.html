@@ -5,7 +5,7 @@
     		<h3>Admin functionality</h3>
 			<p>Overview of all the expressions</p>
 			<div class="center-div">
-				<div class="cat-div" ng-repeat="category in allCategories">
+				<div class="cat-div" ng-repeat="category in allCategories" ng-if="category.name != 'app'">
 					<div class="cat-img" >
 						<img ng-src="img/expressions/{{category.name}}.svg">
 					</div>

@@ -28,7 +28,7 @@
 		    	<div class="flash-alert" ng-show="allNotifications.length==0">
 			      <p>You don't have any notifications yet.</p>
 			    </div>
-			    <div class="states" ng-repeat="notification in allNotifications | reverse | limitTo:10">
+			    <div class="states" ng-repeat="notification in reverse(allNotifications)">
 				    <a href="#/app/notifications/{{notification._id}}" class="item item-avatar">
 					    <img ng-src="img/expressions/{{notification.category.name}}.svg">
 					    <h2>{{notification.title}}</h2>

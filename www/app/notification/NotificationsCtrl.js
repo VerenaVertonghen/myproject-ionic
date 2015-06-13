@@ -4,6 +4,11 @@ angular.module('starter.NotificationCtrl').controller('NotificationsCtrl', ['$sc
         
         $scope.allNotifications = [];
         $scope.showadmin = false;
+
+        $scope.reverse = function(array) {
+            var copy = [].concat(array);
+            return copy.reverse();
+        }
         
         var encodedlogin = "";
         
@@ -29,7 +34,7 @@ angular.module('starter.NotificationCtrl').controller('NotificationsCtrl', ['$sc
 
         function getNotificationsSuccess(success) {
             $scope.allNotifications = success;
-            //console.log("success",success);
+            console.log("allNotifications",$scope.allNotifications);
         }
 
         function getNotificationsError(error) {

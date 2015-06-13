@@ -7,8 +7,21 @@ angular.module('starter.UserService', []).factory('UserService', ['$http', '$q',
             addStateToUser: addStateToUser,
             addNotificationToUser: addNotificationToUser,
             removeNotifications: removeNotifications,
-            removeExpressions: removeExpressions
+            removeExpressions: removeExpressions,
+            getUserByEmail: getUserByEmail
         };
+
+        function getUserByEmail($email) {
+            console.log("into Service getUserByEmail");
+            console.log("$email");
+            console.log($email);
+
+            var request = $http({
+                method: "get",
+                url: apiUrl + "/getuserbyemail/"+ $email
+            });
+            return request;
+        }
 
         function getUser($encodedLogin) {
             console.log("into Service getUser");

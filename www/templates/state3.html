@@ -6,7 +6,7 @@
 		</div>
 		<p class="quote">"{{message}}"</p>
 		<form name="inputForm" ng-submit="postState(inputForm.$valid)" novalidate>
-		<textarea name="text" type="text" id="text" ng-model="input.text" ng-minlength="5" ng-maxlength="200" required></textarea>
+		<textarea name="text" type="text" id="text" ng-model="input.text" ng-minlength="5" ng-maxlength="500" placeholder="You can write whatever you want here, it will only be visible to you." required></textarea>
 		<button class="button button-block button-positive ion-ios-paperplane" ng-disabled="inputForm.$invalid" ng-click="postState(text)">
 			Post it
 		</button> 

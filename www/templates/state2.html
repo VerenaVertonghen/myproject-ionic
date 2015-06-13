@@ -5,16 +5,16 @@
 	    <div id="border-div">
 	    <div id="all-categories" class="align-left">
 			<div ng-show="showup">
-				<ion-radio ng-repeat="category in allCategories | upFilter" ng-model="categoryid.id" value="{{category._id}}">{{category.name}}</ion-radio>
+				<ion-radio ng-repeat="category in allCategories | upFilter" ng-if="category.name != 'app'" ng-model="categoryid.id" value="{{category._id}}">{{category.name}}</ion-radio>
 			</div>
 			<div ng-show="showdown">
 				<ion-radio ng-repeat="category in allCategories | downFilter" ng-model="categoryid.id" value="{{category._id}}">{{category.name}}</ion-radio>
 			</div>
 		</div>
-		<button class="button button-block button-positive ion-ios-paperplane" ng-click="postState()">
+		<button class="button button-block button-positive ion-ios-paperplane" ng-disabled="!categoryid.id" ng-click="postState()">
 			Post it now
 		</button> 
-		<button class="button button-block button-positive ion-ios-chatbubble" ng-click="nextStep()">
+		<button class="button button-block button-positive ion-ios-chatbubble" ng-disabled="!categoryid.id"  ng-click="nextStep()">
 			Talk about it
 		</button> 
 		</div>
