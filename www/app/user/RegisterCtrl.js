@@ -30,6 +30,7 @@ angular.module('starter.UserCtrl').controller('RegisterCtrl', ['$scope', '$state
         }
 
         function getUserSuccess(success) {
+            console.log("getUserSuccess",success);
             $scope.singleUser = success;
             $scope.usermessage = false;
             $scope.registererror = false;
@@ -46,6 +47,7 @@ angular.module('starter.UserCtrl').controller('RegisterCtrl', ['$scope', '$state
         // Register
         $scope.register = function(isValid) {
             if (isValid) {
+                console.log("scope email",$scope.user.email);
                 var result = UserService.getUserByEmail($scope.user.email);
                 result.success(getUserSuccess).error(getUserError);
                 email = $scope.user.email;

@@ -13,8 +13,7 @@ angular.module('starter.UserService', []).factory('UserService', ['$http', '$q',
 
         function getUserByEmail($email) {
             console.log("into Service getUserByEmail");
-            console.log("$email");
-            console.log($email);
+            console.log("$email",$email);
 
             var request = $http({
                 method: "get",
@@ -117,6 +116,9 @@ angular.module('starter.UserService', []).factory('UserService', ['$http', '$q',
 
         function createUser($email,$firstname,$lastname,$password) {
             console.log("into Service createUser");
+            console.log("$email",$email);
+            console.log("$firstname",$firstname);
+            console.log("$lastname",$lastname);
 
             var request = $http({
                 method: "post",
